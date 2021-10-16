@@ -1,13 +1,8 @@
 import React from 'react';
-import {View, Text, StatusBar} from 'react-native';
+import AppNavContainer from './src/navigations';
 
 const App = () => {
-  return (
-    <>
-      <StatusBar barStyle="dark-content" />
-      <Text>hello here</Text>
-    </>
-  );
+  return <AppNavContainer></AppNavContainer>;
 };
 
 export default App;
