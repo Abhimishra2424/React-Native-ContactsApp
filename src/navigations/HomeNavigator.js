@@ -5,7 +5,7 @@ import {Text, View} from 'react-native';
 const ContactsScreen = () => {
   return (
     <View>
-      <Text> hi from contact</Text>
+      <Text> hi from contact Screen</Text>
     </View>
   );
 };
