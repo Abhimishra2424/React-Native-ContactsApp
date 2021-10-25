@@ -1,8 +1,13 @@
-import React from 'react';
-import AppNavContainer from './src/navigations';
+import React from "react";
+import GlobalProvider from "./src/context/provider";
+import AppNavContainer from "./src/navigations";
 
 const App = () => {
-  return <AppNavContainer></AppNavContainer>;
+  return (
+    <GlobalProvider>
+      <AppNavContainer></AppNavContainer>
+    </GlobalProvider>
+  );
 };
 
 export default App;
