@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Text } from "react-native";
 import Container from "../../components/common/container";
+import CustomButton from "../../components/common/CustomButton";
 import Input from "../../components/common/Input";
 
 const Login = () => {
@@ -22,6 +23,29 @@ const Login = () => {
         label="Password"
         icon={<Text>A</Text>}
         iconPosition="right"
+      />
+      <CustomButton
+        title="submit"
+        loading={true}
+        disabled={true}
+        secondary
+        onPress={() => console.warn("hhhh")}
+      />
+
+      <CustomButton
+        title="submit"
+        loading={true}
+        // disabled={true}
+        primary
+        onPress={() => console.warn("hhhh")}
+      />
+
+      <CustomButton
+        title="submit"
+        loading={true}
+        // disabled={true}
+        danger
+        onPress={() => console.warn("hhhh")}
       />
     </Container>
   );
