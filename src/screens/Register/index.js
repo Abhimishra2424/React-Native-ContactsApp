@@ -1,14 +1,8 @@
 import React from "react";
-import { StyleSheet, Text, View } from "react-native";
+import RegisterComponent from "../../components/common/Register";
 
 const Register = () => {
-  return (
-    <View>
-      <Text>Register </Text>
-    </View>
-  );
+  return <RegisterComponent />;
 };
 
 export default Register;
-
-const styles = StyleSheet.create({});

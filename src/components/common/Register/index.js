@@ -3,12 +3,12 @@ import React from "react";
 import { Image, StyleSheet, Text, View } from "react-native";
 import { Button } from "react-native-paper";
 import colors from "../../../assets/theme/colors";
-import { REGISTER } from "../../../constants/routeNames";
+import { LOGIN } from "../../../constants/routeNames";
 import Container from "../container";
 import CustomButton from "../CustomButton";
 import Input from "../Input";
 
-const LoginComponent = () => {
+const RegisterComponent = () => {
   const navigation = useNavigation();
   return (
     <Container>
@@ -20,11 +20,26 @@ const LoginComponent = () => {
       />
       <View>
         <Text style={styles.title}>Welcome to RNCContacts </Text>
-        <Text style={styles.subtitle}>Please login here </Text>
+        <Text style={styles.subtitle}>New Register here </Text>
         <View style={styles.form}>
           <Input
             label="Username"
             placeholder="Enter your Name"
+            iconPosition="right"
+          />
+          <Input
+            label="First Name"
+            placeholder="Enter your First Name"
+            iconPosition="right"
+          />
+          <Input
+            label="Last Name"
+            placeholder="Enter your Last Name"
+            iconPosition="right"
+          />
+          <Input
+            label="Email"
+            placeholder="Enter your Email"
             iconPosition="right"
           />
           <Input
@@ -37,12 +52,12 @@ const LoginComponent = () => {
         </View>
         <CustomButton primary title="Submit" />
         <View style={styles.createSection}>
-          <Text style={styles.infoText}>Need a new Account? </Text>
+          <Text style={styles.infoText}>Already have a an Account? </Text>
           <Button
             style={styles.linkBtn}
-            onPress={() => navigation.navigate(REGISTER)}
+            onPress={() => navigation.navigate(LOGIN)}
           >
-            Register
+            LOGIN
           </Button>
         </View>
       </View>
@@ -50,7 +65,7 @@ const LoginComponent = () => {
   );
 };
 
-export default LoginComponent;
+export default RegisterComponent;
 
 const styles = StyleSheet.create({
   logoImage: {
