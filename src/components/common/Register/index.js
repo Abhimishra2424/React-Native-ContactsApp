@@ -11,7 +11,6 @@ import Input from "../Input";
 // import * as Yup from "yup";
 
 const RegisterComponent = () => {
-
   const navigation = useNavigation();
   return (
     <Container>
@@ -34,7 +33,7 @@ const RegisterComponent = () => {
             password: "",
           }}
           onSubmit={(values) => console.log(`values`, values)}
-          validationSchema={SignupSchema}
+          // validationSchema={SignupSchema}
         >
           {({ handleBlur, handleChange, values, handleSubmit}) => (
             <View style={styles.form}>
