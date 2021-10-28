@@ -1,11 +1,11 @@
-import { DEV_BACKEND_URL, PRO_BACKEND_URL } from "@env";
+import { DEV_BACKEND_URL, PROD_BACKEND_URL } from "@env";
 
-const devEnviromentVariavles = {
-  DEV_BACKEND_URL,
+const devEnvironmentVariables = {
+  BACKEND_URL: DEV_BACKEND_URL,
 };
 
-const prodEnviromentVariavles = {
-  PRO_BACKEND_URL,
+const prodEnvironmentVariables = {
+  BACKEND_URL: PROD_BACKEND_URL,
 };
 
-export default __DEV__ ? devEnviromentVariavles : prodEnviromentVariavles;
+export default __DEV__ ? devEnvironmentVariables : prodEnvironmentVariables;
